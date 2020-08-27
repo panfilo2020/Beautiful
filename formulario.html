@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creaciòn de formulario</title>
+</head>
+<body>
+    <!--para crear formularios <form></form> es una etiqueta para ello, se pueden emplear dos atributos de los cuales los mas imprtantes son action="" (resive como valor una URL que se encarga de procesar  los formularios de cierto modo por ejemplo si dento de esta colocaramos DATOS.PHP, entonces este archivo procesara toda la informacion qu enviemos durante el formulario o dentro del) y method="" (nos permite especificar por que metodo vamos a enviar nuestra informacion ejemplo; "POST","GET"-->
+    <form>
+        <!--area para nombre del usuario-->
+
+        <!--la etiqueta label nos permite asignar su contenido a la etiqueta input por medio de la propiedad name(en input), enlazado en la propiedad for="aqui es donde debe ir el contenido de la propiedad name para asignar este texto a la etiqueta input, de este modo al momento de pasar o hjacer click en al texto podemos enpezar a colocar los datos"-->
+        <label for="name">Ingrese su Nombre;</label>    
+        <!--la etiqueta input crea una caja donde al usuario se le pide ingresar sus datos, ademas esta etiqueta tiene algunas propiedades las cuales son practicas como placeholder=que es un mensaje o instruccion en la caja para el usuario..el tamaño de la caja tambien se puede modificar con size="el tamaño que sea adecuado"(aunque el tamaño se puede modificar con css)...aqui otra propiedad maxlength="es para establecer un  numero determinado de caracteres dentro de la caja", la propiedad name="no se utiliza mucho en diseño y estructura, no obstante es importante al momento de procesar los datos"... -->
+        <input type="text" placeholder="Nombre completo" maxlength="7" name="" id="name">
+        <br><br>
+
+        <label for="second name">Segundo Nombre; </label>
+
+        <input type="text" placeholder="segundo nombre" name="" id="second name"><br><br>
+        
+        <label for="apellidos">Ingrese Apellidos;</label>
+
+        <input type="text" placeholder="apellidos" name="" id="apellidos"><br><br>
+ 
+         <!--area para contraseña--> 
+        <label for="password">Ingrese Contraseña;</label>
+        
+        <input type="password" placeholder="15 caracteres" maxlength="15" name="Contraseña" id="password">
+        <br><br>
+
+        <!--Area para el email-->
+        <label for="email">  Ingrese Email;  </label> 
+        
+        <input type="email" placeholder="email" name="correo" id="email">
+        
+        <br><br>
+
+        <!--Area de fecha de inicio-->
+        <label for="fecha">Ingrese la fecha;</label>
+
+        <input type="date"  name="dia" id="fecha">
+        <br><br>
+
+        <!--ademas de radio, tambien esta la propiedad checkboox que nos permite marcar o desmarcar una seleccion de casilla, en el video dice que al agregar dos o ms opciones con ceckboox aun siendo diferentes opciones se pueden selecionar todas(si eso se busca esta bien, pero si se quiere solo sleccionar una sola casilla entonces el uso de radio es indispensable(lee lo que escribi sobre radio)-->
+
+        
+        <input type="radio" value="hombre" name="este" id="">Hombre
+
+        <input type="radio" value="mujer" name="este" id="">Mujer
+        <!--en radio ambos input tienen los mismos NAME para que solo uno de los dos sea seleccionado-->
+        <br><br>
+        <!--button nos sirve para hacer alguna alguna accion con otro lenguaje como javaScript-->
+        <input type="button" value="finalizar">
+        <!--la propiedad submit esta estrechamente relacionada con form caundo a este se le ya se le ha indicado a donde enviar los datos-->
+        <input type="submit" value="enviar">
+
+            <!--la etiqueta select crea una lista desplegable, y option esta contenido dentro de select ya que en esta se mostraran-->
+        <select name="" id="">
+            <option value="mexico">Mexico</option>
+            <option value="rusia">Rusia</option>
+            <option value="asia">Asia</option>
+        </select>
+
+        <input type="color" name="" id="">
+
+        <br><br>
+
+        <label for="rango">MAXIMO DE 100%</label>
+        <br>
+        <input type="range" name="" id="rango">
+        <br><br>
+
+        <input type="reset" value="Reset Data"><br><br>
+
+        <!--gran parte de los atibutos de input type estan dentro de sus documentacion revisarla es muy practico, si a esto le sumamos los videos de youtube-->
+
+
+
+        <!--con el atibuto name="" le estamos idicando que valor estamos pidiendo-->
+
+    </form>
+
+
+    <!--la etiqueta <LABEL></LABEL> aqui tambien hay atributos como; for="" utilizado para vincular con todo el <input> y ara ello es requisito escribir lo mismo que esta dentro el atributo ID="" de esa manera se vincula ejemplo;
+        <label for="name">ingrese su Nombre;</label>          
+        <input type="text" placeholder="Nombre completo" maxlength="7" name="Nombre" id="name"> -->
+
+    <!--para colocar una ventana donde el usuario escriba lo(S) dato(S) que requiero hago uso de la etiqueta <input> ya dentro de esta puedo utilizar algunos atributos; type="" que es el indicador de la accion(ejemplo; si coloco "text" solo sera para texto) para la ventana,placeholder="" puede ir de complemento con el atributo anterior, de esta manera el usuario sabra que hacer cuando vea la input o pequeña ventana-->
+
+    <!--otro atributo de la etiqueta <input> es MAXLENGTH="" que indica o limita el numero de carecteres dentro de la ventana-->
+    
+</body>
+</html>

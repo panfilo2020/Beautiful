@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--revisar a que se debe la "no" transformacion a css-->
+<link rel="stylesheet" href="css/estilos.css">
+</head> 
+<body>
+<!--la etiqueta div es para agregar contenido grafico-->
+
+
+<!--al colocar l etiqueta <header></header> estamos creando contenido semantico, al crear este tipo de contenido semantico el o los buscadores van a tomar en cuenta el sitio web-->
+<header>
+    <!--align="center" sirve para centrar una imagen, solo que este atributo va enseguida de div <div align="center">-->
+    <div align="center">
+        <img src="anime/kakashi.jpg"  alt=" logo kakashi" height="250" title="kakashi" />
+        <!--la etiqueta <img src="etc/.../, para ser honesto actualmente desconzco la utilidad de esto, asi averigualo-->
+    </div>
+    <!--<nav></nav> es para cominicar al buscador que tenemos un menu-->
+    <nav>
+        <ul>
+            <li><a href="#">inicio</a></li>
+            <li><a href="#">dos inicio</a></li>
+            <li><a href="#">tres inicio</a></li>
+        </ul>
+    </nav>
+
+
+
+<!--para la barra lateral se utiliza la etiqueta <aside></aside>(quiere decir afuera), ademas le da a entender que el contenido no es importante para el buscador aunque quiza si lo sea para el usuario, otra cosa es que podemos agregar mas contenido del que queramos-->
+</header>
+<!--la etiqueta section sirve para agrupar mi primer contenido y el segundo en uno solo y el atributo class="wrapper" es contenedor como para colocar dentro mas secciones que queremos agrupar-->
+<section class="wrapper">
+ <section class="main"><!-- la clase main va a identificar que es el contenido principal, es decir que son los articulos-->
+
+     <!--utilizamos la etiqueta <article></article> dentro de las etiquetas <section></section> para ser notorios en la busqueda en algun navegador, esta etique lleva dentro encabezados apartir de h2, para evitar penalizacciones de google-->
+     <article>
+         <h2>Titulo De Nuestra Pagina</h2>
+         <!--contenido-->
+         <p><strong> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab minus beatae, tempora soluta sequi repudiandae voluptatibus laborum, et dolores molestiae tempore eos excepturi pariatur quis! Quia consequatur voluptas autem blanditiis?</strong></p>
+
+         <h2>Titulo De Nuestra Pagina 2</h2>
+         <!--contenido-->
+         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab minus beatae, tempora soluta sequi repudiandae voluptatibus laborum, et dolores molestiae tempore eos excepturi pariatur quis! Quia consequatur voluptas autem blanditiis?</p>
+     </article>
+ </section>
+ <!--dentro de la etiqueta <aside></aside> tambien van encabezados en este caso respetando el orden <h3></h3>, ademas en este encabezado contiene en la pagina lo mas comun que son imagenes, publicidad, menus, etc.  -->
+ <aside>
+     <h3>Sidebar</h3>
+     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum sint, odit cupiditate id veniam quibusdam vitae eligendi. Adipisci deleniti ut perspiciatis veritatis velit culpa voluptates, eius minima, magni at ducimus!</p>
+ </aside>
+ <!--la etiqueta <aside></aside> viene siendo el contenido secundario-->
+
+</section>
+<!--esta etiqueta <footer></footer> le indica al navegador que tenemos un pie de pagina, en esta se agregan datos como quein es la pgina, algunos otros menus o cosas que otros queramos-->
+<footer>
+    <!--<a name="cabrito"></a> este solo fue una prueba para saber mas como funciona el enlace hacia un sitio son el mismo nombre de enlace ejemplo; <a href="pagina o lo que quiera#<a name="nombre"></a>"-->
+    <p><b> Ramiro Panfilo - aprendiendo mas sobre como programar paginas web con html en el 2020, todos los derechos reservados </b></p>
+</footer>
+
+    
+
+</body>
+</html>

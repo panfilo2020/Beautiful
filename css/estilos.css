@@ -1,0 +1,6 @@
+body{   /* esta etiqueta sirve para los comentarios, otra cosa como ya enlace mi doc estructura.html con mi stylesheet todos los cambios que realice aqui seran notorios en el doc html */
+        background: #af888879;
+        /* background es para color de fondo */
+        color: rgb(228, 28, 178);
+        /* color es para todo el texto de la pagina, de hecho por el momento le veo un poco de similitud con javascritpt */
+    }
