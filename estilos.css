@@ -11,3 +11,8 @@ div img{
 .image{
     width: 75%;
 }
+
+img.image{
+width: 65%;
+height: 250px;
+}
