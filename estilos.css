@@ -1,9 +1,9 @@
-div{
+div.h{
     background: black;
     color: blanchedalmond;
  
 }
-div img{
+div.h img{
     padding: 3px 75px;
     width: 75%;
 }
@@ -15,4 +15,17 @@ div img{
 img.image{
 width: 65%;
 height: 250px;
+}
+
+div.aqui img.de{
+    width: 80%;
+    background: rgb(76, 251, 251);
+    padding: 3px 75px;
+}
+/*habia asignado un background y no hubo cambio alguno en la imagenes, asi lo deje y me enfoque en un padding, cuando lo incorpore el background aparecio*/
+div.aqui div.other img.cool{
+    width: 80%;
+    background: fuchsia;
+   padding: 3px 75px;
+
 }
